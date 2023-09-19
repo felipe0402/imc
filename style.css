@@ -53,7 +53,6 @@ body {
   line-height: 4rem;
 }
 
-
 form {
   width: 30rem;
 }
@@ -111,4 +110,11 @@ button {
 
 button:hover {
   background-color: var(--bg-button-hover);
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }

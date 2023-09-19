@@ -19,12 +19,18 @@
           <h1 class="title">CALCULAR IMC</h1>
           <div class="input-wrapper">
             <label for="weight">Peso (Kg)</label>
-            <input type="number" id="weight" placeholder="60" />
+            <input type="number" min="1" id="weight" placeholder="60" />
           </div>
 
           <div class="input-wrapper">
             <label for="height">Altura (M) </label>
-            <input type="number" id="height" placeholder="165" />
+            <input
+              type="number"
+              min="1"
+              maxlength="4"
+              id="height"
+              placeholder="165"
+            />
           </div>
           <button type="submit">
             CALCULAR IMC
