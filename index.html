@@ -13,6 +13,7 @@
     <title>IMC</title>
   </head>
   <body>
+    <div class="alert-error">Digite apenas numeros</div>
     <div class="container">
       <main class="card">
         <form action="">
@@ -34,24 +35,19 @@
           </div>
           <button type="submit">
             CALCULAR IMC
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="17"
-              height="16"
-              viewBox="0 0 17 16"
-              fill="none"
-            >
-              <path
-                d="M3.1685 8.26205L14.3589 8.26213M14.3589 8.26213L9.64488 3.54808M14.3589 8.26213L9.64488 12.9762"
-                stroke="white"
-                stroke-width="1.20972"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+            <img src="./img/seta.svg" alt="seta" />
           </button>
         </form>
       </main>
+    </div>
+
+    <div class="modal-wrapper">
+      <div class="modal card">
+        <h2 class="title">
+          <button class="close"><img src="./img/fecha-X.svg" alt="" /></button>
+          Seu IMC e 28
+        </h2>
+      </div>
     </div>
   </body>
 </html>
