@@ -1,3 +1,5 @@
+@import ".//animationH1.css";
+
 * {
   margin: 0;
   padding: 0;
@@ -7,9 +9,11 @@
   font-size: 62.5%;
 
   /* cores */
+  --background-size: unquote("min(100vw, 40em)");
+
   --tt-hading: #0c3440;
 
-  --tt-label: #00453a;
+  --tt-label: #048872;
 
   --tt-input: #212529;
   --ot-input: #02799d;
@@ -28,7 +32,7 @@
 
 body {
   font-family: "roboto", sans-serif;
-  background: #010424;
+  background: #010316;
   font-size: 1.6rem;
 }
 .container {
@@ -38,9 +42,10 @@ body {
 }
 
 .card {
+  position: relative;
   margin-top: 8rem;
-  background: white;
-  padding: 4.8rem 6.4rem 6.4rem;
+  background: rgb(19, 18, 18);
+  padding: 4.8rem 5.4rem 6.4rem;
   max-width: 42.8rem;
   margin-inline: auto;
 
@@ -180,4 +185,47 @@ form button:hover {
 
   opacity: 0;
   visibility: hidden;
+}
+
+.card:before,
+.card:after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000,
+    #fb0094,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000
+  );
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+  border-radius: 0.7rem;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.card:after {
+  filter: blur(50px);
 }

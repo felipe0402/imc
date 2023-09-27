@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt=br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,17 +14,18 @@
   </head>
   <body>
     <div class="alert-error">Digite apenas numeros</div>
-    <div class="container">
+    <div class="block">
+    <div class="container block">
       <main class="card">
         <form action="">
-          <h1 class="title">CALCULAR IMC</h1>
+          <h1 class="title logo"><b><span>CALCULO </span> DE <span>IMC</span></b></h1>
           <div class="input-wrapper">
-            <label for="weight">Peso (Kg)</label>
+            <label for="weight">Peso <strong>(Kg</strong>)</label>
             <input type="number" min="1" id="weight" placeholder="60" />
           </div>
 
           <div class="input-wrapper">
-            <label for="height">Altura (M) </label>
+            <label for="height">Altura <strong> (cm)</strong> </label>
             <input
               type="number"
               min="1"
@@ -33,21 +34,23 @@
               placeholder="165"
             />
           </div>
-          <button type="submit">
+          <button lass='glowing-btn' type="submit">
             CALCULAR IMC
             <img src="./img/seta.svg" alt="seta" />
           </button>
         </form>
       </main>
-    </div>
+    </div></block>
+    
 
     <div class="modal-wrapper">
       <div class="modal card">
         <h2 class="title">
           <button class="close"><img src="./img/fecha-X.svg" alt="" /></button>
-          Seu IMC e 28
+          <span>Seu IMC e 28</span>
         </h2>
       </div>
     </div>
   </body>
+  <script src="./script.js"></script>
 </html>
