@@ -36,7 +36,7 @@ body {
   font-size: 1.6rem;
 }
 .container {
-  height: 80vh;
+  height: 100vh;
   display: grid;
   place-content: center;
 }
@@ -120,11 +120,14 @@ form button:hover {
 
 @media (max-width: 800px) {
   .card {
-  position: relative;
-   top: -10rem;
+    position: relative;
+
     padding: 2.6rem 3.2rem 4.2rem;
     max-width: 38.8rem;
     margin-inline: auto;
+  }
+  .container {
+    height: 80vh;
   }
 }
 
