@@ -19,6 +19,12 @@ body {
 .logo b span:nth-of-type(2) {
   animation: blink linear infinite 3s;
 }
+@media (max-width: 800px){
+  .logo b {
+    font: 700 5.6vh "roboto";
+  }
+}
+
 @keyframes blink {
   78% {
     color: inherit;
