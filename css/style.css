@@ -58,6 +58,16 @@ body {
   line-height: 4rem;
   text-align: center;
 }
+label,
+.title,
+button {
+  user-select: none !important;
+  -ms-user-select: none !important;
+  -moz-user-select: none !important;
+  -khtml-user-select: none !important;
+  -webkit-user-select: none !important;
+  -webkit-touch-callout: none !important;
+}
 
 form {
   width: 30rem;
