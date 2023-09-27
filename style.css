@@ -118,16 +118,14 @@ form button:hover {
   background-color: var(--bg-button-hover);
 }
 
-
 @media (max-width: 800px) {
   .card {
     position: relative;
     margin-top: 0;
-    padding: 2.8rem 3.4rem 4.4rem;
-    max-width: 45.8rem;
+    padding: 2.6rem 3.2rem 4.2rem;
+    max-width: 42.8rem;
     margin-inline: auto;
   }
-  
 }
 
 /*MODAL*/
