@@ -122,9 +122,9 @@ form button:hover {
 @media (max-width: 800px) {
   .card {
     position: relative;
-    margin-top: 4rem;
+    margin-top: 0;
     padding: 2.8rem 3.4rem 4.4rem;
-    max-width: 42.8rem;
+    max-width: 45.8rem;
     margin-inline: auto;
   }
   
