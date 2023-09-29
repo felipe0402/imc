@@ -1,10 +1,17 @@
 import { AlertError } from "./alert-error.js";
 import { Modal } from "./modal.js";
+import { IMC, notNumber } from "./utils.js";
 
 const form = document.querySelector("form");
 
 const inputWeight = document.querySelector("#weight");
 const inputHeight = document.querySelector("#height");
+
+const input = document.querySelectorAll(".input");
+
+function eventInput() {
+  input.AlertError.eventInput("click");
+}
 
 // not-recharge = Nao recarregue a pagina
 function notRecharge(event) {
@@ -29,16 +36,11 @@ form.onsubmit = (event) => {
 
   Modal.Menssage.innerText = messege;
 
+  inputWeight.oninput = () => AlertError.close();
+  inputHeight.oninput = () => AlertError.close();
+
   //modalWrapper.classList.add("open");
   Modal.open();
 };
-
-function notNumber(value) {
-  return isNaN(value) || value == ("", ",", ".");
-}
-
-function IMC(weight, height) {
-  return (weight / (height / 100) ** 2).toFixed(2);
-}
 
 //animation inputs
